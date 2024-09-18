@@ -1,0 +1,858 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-bottom:100px !important;
+}
+
+.search-bar {
+    margin-top: 60px;
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+    .search-bar input,
+    .search-bar button {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+
+    .search-bar input {
+        flex: 1;
+    }
+
+    .search-bar button {
+        background-color: red;
+        color: white;
+        cursor: pointer;
+    }
+
+        .search-bar button:hover {
+            background-color: darkred;
+        }
+
+.container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust margin to space below the search bar */
+    flex-wrap: wrap;
+    margin-bottom: 50px !important;
+}
+
+.feature {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+}
+
+    .feature img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .feature h3 {
+        color: red;
+        margin: 10px 0;
+    }
+
+    .feature p {
+        color: white;
+    }
+
+.results-container {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.result {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+    .result h4 {
+        color: red;
+    }
+
+
+#packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1b1b1b;
+}
+
+/* Count of available packages */
+.package-count h2 {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Card styling */
+.package-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+    /* Card hover effect */
+    .package-card:hover {
+        transform: scale(1.05);
+        border-color: #ff4c4c;
+    }
+
+.packages-container {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.package-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.package-card {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+}
+
+    .package-card:hover {
+        transform: scale(1.05);
+        border-color: #ff4c4c;
+    }
+
+    .package-card .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #222;
+        color: #ff4c4c;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .package-card .card-body {
+        padding: 15px;
+        color: #ddd;
+    }
+
+    .package-card .card-text {
+        margin-bottom: 10px;
+    }
+
+    .package-card .btn-heart {
+        background: none;
+        border: none;
+        color: #ff4c4c;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+        .package-card .btn-heart:hover {
+            color: #ff8080;
+        }
+
+    .package-card .btn-danger {
+        background-color: #ff4c4c;
+        border: none;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px 0;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .package-card .btn-danger:hover {
+            background-color: #ff8080;
+        }
+
+#specialPackageHeading {
+    color: #ff4c4c;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.special-packages {
+    margin-top: 20px;
+}
+
+.navbar {
+    background-color: black;
+    padding: 10px 20px; /* Adjusted padding for a balanced look */
+    display: flex;
+    justify-content: flex-end; /* Aligns all items to the right */
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+    .navbar .nav-links {
+        display: flex;
+        gap: 15px; /* Space between "Wishlist" and "Home" */
+        align-items: center;
+    }
+
+        .navbar .nav-links a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+            .navbar .nav-links a:hover {
+                color: darkred;
+            }
+
+.logout-button {
+    margin-left: 30px; /* Increased spacing from the grouped links */
+    background-color: #e60000; /* Red background */
+    color: #fff; /* White text */
+    padding: 8px 16px; /* Adjusted for a compact button */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .logout-button:hover {
+        background-color: #c40000; /* Darker red on hover */
+    }
+
+.navbar i {
+    margin-right: 5px; /* Adds space between icons and text */
+}
+
+/* Custom Scrollbar Styling */
+body::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #1c1c1c; /* Darker track background */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #444; /* Dark grey for the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners */
+    border: 2px solid #1c1c1c; /* Dark border around the thumb */
+}
+
+    body::-webkit-scrollbar-thumb:hover {
+        background-color: #555; /* Lighter grey on hover */
+    }
+
+/* Scrollbar for main content */
+.main-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background-color: #444; /* Darker grey */
+    border-radius: 5px;
+}
+
+    .main-content::-webkit-scrollbar-thumb:hover {
+        background-color: #666; /* Slightly lighter grey on hover */
+    }
+
+/* Shepherd tour custom styles */
+.shepherd-theme-custom .shepherd-element {
+    background-color: #000; /* Black modal background */
+    border-color: #ff0000; /* Red border for the modal */
+    color: #fff; /* White text color */
+}
+
+.shepherd-theme-custom .shepherd-button-primary {
+    background-color: #00ff00; /* Green for Next and Back buttons */
+    color: #000; /* Black text color */
+}
+
+.shepherd-theme-custom .shepherd-button-secondary {
+    background-color: #00ff00; /* Green for the Back button */
+    color: #000; /* Black text color */
+}
+
+.shepherd-theme-custom .shepherd-button-danger {
+    background-color: #ff0000; /* Red for the Skip button */
+    color: #fff; /* White text color */
+}
+
+/* Optional: Style the cancel icon */
+.shepherd-theme-custom .shepherd-cancel-icon {
+    color: #ff0000; /* Red cancel icon */
+}
+
+.shepherd-header {
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 2em;
+    padding: .75rem .75rem 0;
+    background-color: black !important;
+    color: white !important;
+}
+
+.shepherd-footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 .75rem .75rem;
+    background-color: black;
+}
+
+.shepherd-title {
+    color: red !important;
+    font-size: 1.5rem !important;
+    font-weight: 400;
+}
+
+.welcome {
+    color: red;
+    background-color: black;
+}
+
+.shepherd-text {
+    background-color: black !important;
+    color: white !important;
+}
+
+/*modal overlay css for blur effect*/
+
+.shepherd-modal-overlay-container {
+    backdrop-filter: blur(90px); /* Increased blur for a very strong effect */
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
+}
+
+
+.shepherd-theme-custom {
+    --shepherd-primary-background: #4CAF50;
+    --shepherd-primary-border-color: #4CAF50;
+}
+
+/* Glorified focus effect with glowing and pulsing */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.6), 0 0 20px rgba(0, 255, 0, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.6);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Animation styles for the Shepherd step */
+.shepherd-highlight {
+    animation: scaleIn 0.5s ease-out, glow 1.5s infinite alternate;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.homeTextContainer{
+    margin-bottom : 100px !important;
+
+}
+
+
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-bottom:100px !important;
+}
+
+.search-bar {
+    margin-top: 60px;
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+    .search-bar input,
+    .search-bar button {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+
+    .search-bar input {
+        flex: 1;
+    }
+
+    .search-bar button {
+        background-color: red;
+        color: white;
+        cursor: pointer;
+    }
+
+        .search-bar button:hover {
+            background-color: darkred;
+        }
+
+.container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust margin to space below the search bar */
+    flex-wrap: wrap;
+    margin-bottom: 50px !important;
+}
+
+.feature {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+}
+
+    .feature img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .feature h3 {
+        color: red;
+        margin: 10px 0;
+    }
+
+    .feature p {
+        color: white;
+    }
+
+.results-container {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.result {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+    .result h4 {
+        color: red;
+    }
+
+
+#packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1b1b1b;
+}
+
+/* Count of available packages */
+.package-count h2 {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Card styling */
+.package-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+    /* Card hover effect */
+    .package-card:hover {
+        transform: scale(1.05);
+        border-color: #ff4c4c;
+    }
+
+.packages-container {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.package-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.package-card {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+}
+
+    .package-card:hover {
+        transform: scale(1.05);
+        border-color: #ff4c4c;
+    }
+
+    .package-card .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #222;
+        color: #ff4c4c;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .package-card .card-body {
+        padding: 15px;
+        color: #ddd;
+    }
+
+    .package-card .card-text {
+        margin-bottom: 10px;
+    }
+
+    .package-card .btn-heart {
+        background: none;
+        border: none;
+        color: #ff4c4c;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+        .package-card .btn-heart:hover {
+            color: #ff8080;
+        }
+
+    .package-card .btn-danger {
+        background-color: #ff4c4c;
+        border: none;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px 0;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .package-card .btn-danger:hover {
+            background-color: #ff8080;
+        }
+
+#specialPackageHeading {
+    color: #ff4c4c;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.special-packages {
+    margin-top: 20px;
+}
+
+.navbar {
+    background-color: black;
+    padding: 10px 20px; /* Adjusted padding for a balanced look */
+    display: flex;
+    justify-content: flex-end; /* Aligns all items to the right */
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+    .navbar .nav-links {
+        display: flex;
+        gap: 15px; /* Space between "Wishlist" and "Home" */
+        align-items: center;
+    }
+
+        .navbar .nav-links a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+            .navbar .nav-links a:hover {
+                color: darkred;
+            }
+
+.logout-button {
+    margin-left: 30px; /* Increased spacing from the grouped links */
+    background-color: #e60000; /* Red background */
+    color: #fff; /* White text */
+    padding: 8px 16px; /* Adjusted for a compact button */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .logout-button:hover {
+        background-color: #c40000; /* Darker red on hover */
+    }
+
+.navbar i {
+    margin-right: 5px; /* Adds space between icons and text */
+}
+
+/* Custom Scrollbar Styling */
+body::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #1c1c1c; /* Darker track background */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #444; /* Dark grey for the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners */
+    border: 2px solid #1c1c1c; /* Dark border around the thumb */
+}
+
+    body::-webkit-scrollbar-thumb:hover {
+        background-color: #555; /* Lighter grey on hover */
+    }
+
+/* Scrollbar for main content */
+.main-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background-color: #444; /* Darker grey */
+    border-radius: 5px;
+}
+
+    .main-content::-webkit-scrollbar-thumb:hover {
+        background-color: #666; /* Slightly lighter grey on hover */
+    }
+
+/* Shepherd tour custom styles */
+.shepherd-theme-custom .shepherd-element {
+    background-color: #000; /* Black modal background */
+    border-color: #ff0000; /* Red border for the modal */
+    color: #fff; /* White text color */
+}
+
+.shepherd-theme-custom .shepherd-button-primary {
+    background-color: #00ff00; /* Green for Next and Back buttons */
+    color: #000; /* Black text color */
+}
+
+.shepherd-theme-custom .shepherd-button-secondary {
+    background-color: #00ff00; /* Green for the Back button */
+    color: #000; /* Black text color */
+}
+
+.shepherd-theme-custom .shepherd-button-danger {
+    background-color: #ff0000; /* Red for the Skip button */
+    color: #fff; /* White text color */
+}
+
+/* Optional: Style the cancel icon */
+.shepherd-theme-custom .shepherd-cancel-icon {
+    color: #ff0000; /* Red cancel icon */
+}
+
+.shepherd-header {
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 2em;
+    padding: .75rem .75rem 0;
+    background-color: black !important;
+    color: white !important;
+}
+
+.shepherd-footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 .75rem .75rem;
+    background-color: black;
+}
+
+.shepherd-title {
+    color: red !important;
+    font-size: 1.5rem !important;
+    font-weight: 400;
+}
+
+.welcome {
+    color: red;
+    background-color: black;
+}
+
+.shepherd-text {
+    background-color: black !important;
+    color: white !important;
+}
+
+/*modal overlay css for blur effect*/
+
+.shepherd-modal-overlay-container {
+    backdrop-filter: blur(90px); /* Increased blur for a very strong effect */
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
+}
+
+
+.shepherd-theme-custom {
+    --shepherd-primary-background: #4CAF50;
+    --shepherd-primary-border-color: #4CAF50;
+}
+
+/* Glorified focus effect with glowing and pulsing */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.6), 0 0 20px rgba(0, 255, 0, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.6);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Animation styles for the Shepherd step */
+.shepherd-highlight {
+    animation: scaleIn 0.5s ease-out, glow 1.5s infinite alternate;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.homeTextContainer{
+    margin-bottom : 100px !important;
+
+}
+
+
+

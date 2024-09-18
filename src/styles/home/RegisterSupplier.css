@@ -1,0 +1,137 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terms-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80%;
+    overflow-y: auto;
+    color: white;
+}
+
+.container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#agreeButton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer; /* Default cursor */
+}
+
+    #agreeButton:disabled {
+        background-color: grey; /* Change background when disabled */
+        cursor: not-allowed; /* 'Not allowed' cursor when disabled */
+        opacity: 0.6; /* Optional: make the button appear dimmed */
+    }
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+    .button.enabled {
+        cursor: pointer;
+        background-color: red;
+    }
+
+    .button:hover {
+        background-color: darkred;
+    }
+
+.checkbox-container {
+    margin: 10px 0;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: red;
+}
+
+.heading2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+}
+
+label {
+    color: white;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.redirect-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+
