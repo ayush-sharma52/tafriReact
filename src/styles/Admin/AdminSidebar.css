@@ -1,0 +1,97 @@
+/* .sidebar {
+  width: 250px;
+  background-color: #333;
+  height: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav-button {
+  background-color: #e60000;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #c40000;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #e60000;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.open-button{
+  display: fixed;
+  left: 10px;
+  top:10px;
+  color:red;
+} */
+
+
+
+
+
+.sidebar {
+  width: 250px;
+  background-color: #f9f9f9; /* Light background */
+  height: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Light shadow for separation */
+  border-right: 1px solid #ddd; /* Light border for separation */
+}
+
+.nav-button {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: #fff; /* White text */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #0056b3; /* Darker shade of blue */
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #007bff; /* Use the primary blue color */
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+.open-button {
+  position: fixed; /* Ensures it stays fixed */
+  left: 10px;
+  top: 10px;
+  color: #007bff; /* Primary blue color */
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.open-button:hover {
+  color: #0056b3; /* Darker shade on hover */
+}

@@ -1,0 +1,155 @@
+/* .admin-dashboard {
+    padding: 20px;
+    background-color: #f0f0f0; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.dropdown-container {
+    margin-bottom: 20px;
+}
+
+.dropdown-label {
+    color: #333; 
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.dropdown {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff; 
+    color: #333; 
+    border: 1px solid #ccc; 
+    font-size: 16px; 
+}
+
+.content-section {
+    margin-top: 20px;
+}
+
+.section-subtitle {
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+
+.table-container {
+    max-height: 400px; 
+    overflow-y: auto;
+    margin-top: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    background-color: black; 
+}
+
+.reviews-table,
+.bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black; 
+}
+
+.reviews-table thead th,
+.bookings-table thead th {
+    background-color: #4caf50; 
+    color: #fff; 
+    padding: 10px;
+}
+
+.reviews-table tbody td,
+.bookings-table tbody td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; 
+    color: white; 
+}
+
+.reviews-table tbody tr:nth-child(even),
+.bookings-table tbody tr:nth-child(even) {
+    background-color: #333;
+}
+
+.reviews-table tbody tr:nth-child(odd),
+.bookings-table tbody tr:nth-child(odd) {
+    background-color: black; 
+}  */
+
+
+
+
+.admin-dashboard {
+    padding: 20px;
+    background-color: #ffffff; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.error-message {
+    color: #d9534f; /* Bootstrap red for error messages */
+    margin-bottom: 20px;
+}
+.dropdown-container {
+    margin-bottom: 20px;
+}
+.dropdown-label {
+    color: #333; /* Darker color for the label */
+    font-size: 18px;
+    margin-right: 10px;
+}
+.dropdown {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff; /* White background for dropdown */
+    color: #333; /* Dark text for readability */
+    border: 1px solid #ccc; /* Light border */
+    font-size: 16px;
+}
+.content-section {
+    margin-top: 20px;
+}
+.section-subtitle {
+    color: #333; /* Darker color for subtitle */
+    margin-bottom: 10px;
+}
+/* Updated styles for scrollable tables */
+.table-container {
+    max-height: 400px; /* Set maximum height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 10px;
+    border: 1px solid #ddd; /* Light border around the table */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for the container */
+}
+.reviews-table,
+.bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* Set background color for table */
+}
+.reviews-table thead th,
+.bookings-table thead th {
+    background-color: #007bff; /* Bootstrap primary blue for header */
+    color: #fff; /* Header text color */
+    padding: 10px;
+}
+.reviews-table tbody td,
+.bookings-table tbody td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Light border between rows */
+    color: #333; /* Text color for table cells */
+}
+.reviews-table tbody tr:nth-child(even),
+.bookings-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+.reviews-table tbody tr:nth-child(odd),
+.bookings-table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+

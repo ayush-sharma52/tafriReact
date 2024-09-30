@@ -1,0 +1,88 @@
+/* ErrorPage.css
+.container {
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.header,
+.subHeader {
+    color: red;
+}
+
+.message {
+    margin: 20px 0;
+}
+
+.buttonContainer {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+
+
+
+
+.container {
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+ 
+.header,
+.subHeader {
+    color: #d9534f; /* Bootstrap danger red for consistency */
+}
+ 
+.message {
+    margin: 20px 0;
+    color: #555; /* Slightly darker text for readability */
+}
+ 
+.buttonContainer {
+    margin-top: 20px;
+}
+ 
+.button {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+

@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+ 
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 50px;
+}
+ 
+.user-details {
+    text-align: center;
+}
+ 
+.header {
+    color: #d32f2f; /* Instagram-like red */
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+ 
+.user-info {
+    margin-top: 20px;
+}
+ 
+.info-item {
+    margin-bottom: 15px;
+}
+ 
+.label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #d32f2f;
+}
+ 
+.info-span {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    background-color: #fff; /* Light card background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    border: 1px solid #e0e0e0; /* Light border */
+}
+ 
+.back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 30px;
+    background-color: #d32f2f; /* Instagram red */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s;
+    cursor: pointer;
+}
+ 
+.back-button:hover {
+    background-color: #b71c1c; /* Darker hover effect */
+    transform: scale(1.05);
+}
+ 
+.back-button:focus {
+    outline: none;
+}
+ 
+.loading,
+.no-supplier {
+    text-align: center;
+    margin-top: 50px;
+    color: #777; /* Softer gray */
+}
