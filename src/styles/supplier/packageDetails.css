@@ -1,0 +1,83 @@
+/* src/styles/packageDetails.css */
+body {
+    background-color: #f8f8f8; /* Light background */
+    color: #262626; /* Dark gray text */
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full view height */
+}
+
+.card {
+    background-color: #ffffff; /* White card background */
+    border: 1px solid #dbdbdb; /* Light gray border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s;
+}
+
+.card-header {
+    background: linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-body p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    background-color: #fafafa; /* Light gray background */
+    padding: 10px;
+    border-radius: 5px;
+    color: #262626; /* Dark text */
+}
+
+.card-body p strong {
+    color: #dc2743; /* Highlighted color */
+}
+
+.btn {
+    background: linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border: none;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #9c0277 100%);
+    transform: scale(1.05);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Hover effect for card */
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}

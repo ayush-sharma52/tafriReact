@@ -1,8 +1,8 @@
-
+/* src/components/Login.css */
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
+    background-color: #fafafa; /* Light gray background like Instagram */
+    color: #262626; /* Dark gray text */
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,16 +12,16 @@ body {
 }
 
 .container {
-    background-color: #333;
+    background-color: #ffffff; /* White container background */
     padding: 20px;
     border-radius: 8px;
     max-width: 400px;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 h1 {
-    color: red;
+    color: #262626; /* Dark gray heading */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -29,6 +29,7 @@ h1 {
 label {
     display: block;
     margin-bottom: 8px;
+    color: #8e8e8e; /* Light gray label text */
 }
 
 input[type="email"],
@@ -36,29 +37,30 @@ input[type="password"] {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #555;
+    border: 1px solid #dbdbdb; /* Instagram-style light gray border */
     border-radius: 4px;
-    background-color: #444;
-    color: white;
+    background-color: #fafafa; /* Light background for inputs */
+    color: #262626; /* Dark text */
 }
 
 button {
-    background-color: red;
+    background: linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: white;
     border: none;
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.3s;
 }
 
-    button:hover {
-        background-color: darkred;
-    }
+button:hover {
+    background: linear-gradient(90deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #9c0277 100%);
+}
 
 .button {
     display: inline-block;
-    background-color: red;
+    background: linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: white;
     padding: 10px 20px;
     border-radius: 4px;
@@ -66,10 +68,12 @@ button {
     text-decoration: none;
     margin: 5px;
     border: none;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
 .button:hover {
-    background-color: darkred;
+    background: linear-gradient(90deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #9c0277 100%);
 }
 
 .link-container {
@@ -78,12 +82,13 @@ button {
 }
 
 .errorMessage > ul > li {
-    color: red;
+    color: #d93025; /* Soft red for error messages */
     font-size: 1.2rem;
     list-style: none;
-    text-align:center;
+    text-align: center;
 }
-.errorMessage{
-    text-align:center;
-    list-style:none;
+
+.errorMessage {
+    text-align: center;
+    list-style: none;
 }

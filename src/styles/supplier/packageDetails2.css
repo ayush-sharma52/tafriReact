@@ -1,0 +1,92 @@
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #007bff;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-light {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-light:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.review-card {
+    background-color: #f8f9fa;
+    border: 1px solid #007bff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-symbol {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+}
+
+.review-rating {
+    margin-left: 10px;
+    color: gold;
+}
+
+.review-body {
+    padding: 10px;
+}
+
+.review-date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+h3 {
+    color: #007bff;
+    font-weight: 600;
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#noReview {
+    text-align: center;
+    color: #007bff;
+    font-size: 1.2rem;
+}

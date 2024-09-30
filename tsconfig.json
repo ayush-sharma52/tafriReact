@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2015", // Or a higher version like es2017, es2020, etc.
+    "downlevelIteration": true, // Enable this to support downlevel iteration
+    // Other options...
     "lib": [
       "dom",
       "dom.iterable",

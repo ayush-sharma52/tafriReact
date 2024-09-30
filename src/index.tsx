@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // Updated for React 18
 import App from './App';
-import './styles/styles.css'; // Make sure your styles are correctly imported
+// import './styles/styles.css'; // Make sure your styles are correctly imported
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(

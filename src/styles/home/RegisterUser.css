@@ -1,0 +1,179 @@
+/* src/components/RegisterUser.css */
+/* body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444;
+    color: white;
+  }
+  
+  button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: darkred;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    border: none;
+  }
+  
+  .button:hover {
+    background-color: darkred;
+  }
+  
+  .redirect-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .errorMessage > ul > li {
+    color: red;
+    font-size: 1.2rem;
+    list-style: none;
+  }
+   */
+   /* src/components/RegisterUser.css */
+body {
+  background-color: #fafafa; /* Light gray background like Instagram */
+  color: #262626; /* Dark gray text */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #ffffff; /* White container background */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h1 {
+  color: #262626; /* Dark gray heading */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #8e8e8e; /* Light gray for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #dbdbdb; /* Instagram-style light gray border */
+  border-radius: 4px;
+  background-color: #fafafa; /* Light gray for input backgrounds */
+  color: #262626; /* Dark text */
+}
+
+button {
+  background: linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #9c0277 100%);
+}
+
+.button {
+  display: inline-block;
+  background: linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #9c0277 100%);
+}
+
+.redirect-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.errorMessage > ul > li {
+  color: #d93025; /* Soft red for error messages */
+  font-size: 1.2rem;
+  list-style: none;
+}

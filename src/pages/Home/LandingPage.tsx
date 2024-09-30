@@ -9,7 +9,7 @@ const LandingPage: React.FC = () => {
   const handleNavigate = (path: string) => {
     navigate(path); // Use navigate instead of history.push
   };
-
+ 
   return (
     <body>
       <div>

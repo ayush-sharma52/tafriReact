@@ -1,0 +1,111 @@
+/* Overall Layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light background */
+    font-family: Arial, sans-serif;
+    color: #262626; /* Dark gray text */
+    overflow-x: hidden;
+}
+
+.modify-package-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full viewport height */
+    background-color: #f8f8f8; /* Light background */
+    padding: 20px;
+}
+
+/* Card Styling for the Modify Form */
+.modify-package-card {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.modify-package-card:hover {
+    transform: scale(1.02);
+}
+
+.card-header {
+    background: linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #262626; /* Dark gray */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbdbdb; /* Light border */
+    border-radius: 5px;
+    background-color: #fafafa; /* Light gray background */
+    color: #262626; /* Dark text */
+    font-size: 14px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #bc1888; /* Highlighted border color */
+    background-color: #fff; /* White background */
+}
+
+/* Submit Button Styling */
+.submit-button {
+    background: linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background: linear-gradient(90deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #9c0277 100%);
+    transform: scale(1.05);
+}
+
+/* Error Message Styling */
+.errorMessage {
+    margin-bottom: 15px;
+    background-color: rgba(255, 105, 97, 0.9); /* Light pink-red */
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
