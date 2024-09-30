@@ -1,0 +1,673 @@
+[
+  {
+    "ContainingType": "tafriAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "tafriAPI.Controllers.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.BookingController",
+    "Method": "CreateBooking",
+    "RelativePath": "api/Booking/CreateBooking",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingDTO",
+        "Type": "tafriAPI.Models.BookingDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.BookingController",
+    "Method": "GetAllBookingsWithDetailsForAdmin",
+    "RelativePath": "api/Booking/GetAllBookingsWithDetailsForAdmin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.BookingController",
+    "Method": "GetAllBookingsWithPackageDetails",
+    "RelativePath": "api/Booking/GetAllBookingsWithPackageDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.BookingController",
+    "Method": "GetBookingsByUserIdAsync",
+    "RelativePath": "api/Booking/GetBookingsByUserId/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.BookingController",
+    "Method": "TravelerDetails",
+    "RelativePath": "api/Booking/TravelerDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "travellers",
+        "Type": "System.Collections.Generic.List\u00601[[tafriAPI.Models.TravellerDTO, tafriAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.MapController",
+    "Method": "AddLocation",
+    "RelativePath": "api/Map/AddLocation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mapLocationRequest",
+        "Type": "tafriAPI.Models.MapLocation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.MapController",
+    "Method": "GetAllLocations",
+    "RelativePath": "api/Map/GetAllMapLocations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "HandleOptions",
+    "RelativePath": "api/Package",
+    "HttpMethod": "OPTIONS",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "AddPackage",
+    "RelativePath": "api/Package/AddPackage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "packageDto",
+        "Type": "tafriAPI.Models.PackageDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "GetPackageDetails",
+    "RelativePath": "api/Package/Details/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "DisapprovePackage",
+    "RelativePath": "api/Package/DisapprovePackage/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "getBookingsByUserId",
+    "RelativePath": "api/Package/findBookingByUserId/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "GetPackageById",
+    "RelativePath": "api/Package/GetPackageById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "GetPackages",
+    "RelativePath": "api/Package/GetPackages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "GetPackagesByDestinationName",
+    "RelativePath": "api/Package/getPackagesByDestinationName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "destination",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "GetPackagesBySupplier",
+    "RelativePath": "api/Package/GetPackagesBySupplier/{supplierId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "GetUserWishlist",
+    "RelativePath": "api/Package/getwishlistedPackage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "ModifyPackage",
+    "RelativePath": "api/Package/ModifyPackage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "packageDto",
+        "Type": "tafriAPI.Models.PackageDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "SearchPackages",
+    "RelativePath": "api/Package/PackageSearchBar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "tafriAPI.Controllers.PackageController\u002BSearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "ReleasePackage",
+    "RelativePath": "api/Package/ReleasePackage/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "GetSpeciallyAssignedPackages",
+    "RelativePath": "api/Package/SpeciallyAssignedPackages/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.PackageController",
+    "Method": "TogglePackage",
+    "RelativePath": "api/Package/TogglePackage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "packageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.RegisterController",
+    "Method": "RegisterSupplier",
+    "RelativePath": "api/Register/registerSupplier",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "tafriAPI.Models.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.RegisterController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/Register/registerUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "tafriAPI.Models.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.ReviewController",
+    "Method": "getAllReviews",
+    "RelativePath": "api/Review/getAllReviews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.ReviewController",
+    "Method": "getReviewByPackageId",
+    "RelativePath": "api/Review/getReviewsByPackageId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pkgId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.SaleController",
+    "Method": "CheckSaleByDate",
+    "RelativePath": "api/Sale/checkSaleByDate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.SaleController",
+    "Method": "saveSaleRequest",
+    "RelativePath": "api/Sale/saveSaleRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "saleRequest",
+        "Type": "tafriAPI.Models.Sale",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "YourNamespace.Controllers.SpecialAssignedPackagesApiController",
+    "Method": "AddSpecialAssignedPackage",
+    "RelativePath": "api/SpecialAssignedPackagesApi/AssignPackage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "YourNamespace.Controllers.AssignPackageRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.UserController",
+    "Method": "AddReview",
+    "RelativePath": "api/User/AddReview",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "tafriAPI.Models.ReviewDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.UserController",
+    "Method": "ApproveSupplier",
+    "RelativePath": "api/User/approveSupplier",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.UserController",
+    "Method": "findUserByEmailId",
+    "RelativePath": "api/User/findUserByEmailId",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.UserController",
+    "Method": "findUserById",
+    "RelativePath": "api/User/findUserById/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.UserController",
+    "Method": "getAllUsers",
+    "RelativePath": "api/User/getUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.UserController",
+    "Method": "LockSupplier",
+    "RelativePath": "api/User/lockSupplier",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriAPI.Controllers.WishlistController",
+    "Method": "AddToWishlist",
+    "RelativePath": "api/Wishlist/addToWishList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "packageId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriMVC.Controllers.HomeController",
+    "Method": "Login",
+    "RelativePath": "login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriMVC.Controllers.HomeController",
+    "Method": "RegisterSupplier",
+    "RelativePath": "registerSupplier",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriMVC.Controllers.HomeController",
+    "Method": "RegisterUser",
+    "RelativePath": "registerUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tafriMVC.Controllers.SupplierController",
+    "Method": "AddPackage",
+    "RelativePath": "Supplier/AddPackage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Destination",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Details",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Count",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "OnHold",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Available",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "finalprice",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "Hold",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Visible",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Released",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "AssignedUserId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WishlistedUserId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
